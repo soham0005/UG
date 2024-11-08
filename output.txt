@@ -1,0 +1,35 @@
+Frequent Item Sets:
+----------------------------------------
+{ OS }
+{ data_mining }
+{ oss }
+{ DBMS }
+{ CN }
+{ OS data_mining }
+{ DBMS oss }
+{ oss CN }
+{ DBMS data_mining }
+{ oss data_mining }
+{ OS oss }
+{ DBMS oss data_mining }
+
+Association Rules:
+----------------------------------------
+{ OS } => { data_mining } (Confidence: 75.00%)
+{ data_mining } => { OS } (Confidence: 60.00%)
+{ DBMS } => { oss } (Confidence: 75.00%)
+{ oss } => { DBMS } (Confidence: 60.00%)
+{ oss } => { CN } (Confidence: 60.00%)
+{ CN } => { oss } (Confidence: 100.00%)
+{ DBMS } => { data_mining } (Confidence: 100.00%)
+{ data_mining } => { DBMS } (Confidence: 80.00%)
+{ oss } => { data_mining } (Confidence: 80.00%)
+{ data_mining } => { oss } (Confidence: 80.00%)
+{ OS } => { oss } (Confidence: 75.00%)
+{ oss } => { OS } (Confidence: 60.00%)
+{ DBMS } => { oss data_mining } (Confidence: 75.00%)
+{ oss } => { DBMS data_mining } (Confidence: 60.00%)
+{ data_mining } => { DBMS oss } (Confidence: 60.00%)
+{ DBMS oss } => { data_mining } (Confidence: 100.00%)
+{ DBMS data_mining } => { oss } (Confidence: 75.00%)
+{ oss data_mining } => { DBMS } (Confidence: 75.00%)

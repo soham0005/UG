@@ -1,0 +1,101 @@
+OrderID,ProductCode,ProductName,Quantity,UnitCost,SupplierID,Country
+100352,1234A,HD Monitor,1,115.39,20413,United Kingdom
+100366,6543F,Gaming Keyboard,5,111.26,20583,France
+100378,5678B,HD Monitor,5,61.98,20623,Italy
+100002,8765G,External SSD,14,263.48,20684,Spain
+100119,1234A,Gaming Keyboard,4,116.66,20364,Germany
+100083,5678B,HD Monitor,11,33.16,20379,Germany
+100067,1112H,Noise Cancelling Headphones,12,128.61,20949,Germany
+100338,9999I,Noise Cancelling Headphones,19,221.66,20166,United Kingdom
+100428,5678B,Wireless Mouse,1,289.38,20676,Netherlands
+100235,9999I,Noise Cancelling Headphones,17,173.09,20870,United Kingdom
+100247,3456D,Gaming Keyboard,4,29.75,20474,Spain
+100001,6543F,Gaming Keyboard,19,186.9,20602,Germany
+100459,9999I,Gaming Keyboard,5,66.93,20737,France
+100301,7890E,Webcam,19,86.15,20436,France
+100176,1234A,External SSD,15,186.51,20950,Germany
+100250,6543F,Smartphone Case,19,60.9,20473,Netherlands
+100218,9123C,Webcam,10,290.1,20617,Spain
+100102,3456D,Smartphone Case,18,81.58,20241,Netherlands
+100207,3456D,HD Monitor,14,6.19,20694,Germany
+100013,8765G,Laptop Stand,19,87.09,20573,Germany
+100342,9123C,USB-C Cable,17,113.45,20778,Italy
+100499,7890E,USB-C Cable,9,92.12,20833,United Kingdom
+100171,1234A,Laptop Stand,14,260.41,20067,Italy
+100417,1234A,Portable Charger,13,197.2,20744,Netherlands
+100029,6543F,USB-C Cable,4,7.14,20964,Germany
+100427,8765G,Webcam,15,47.4,20880,Italy
+100481,5432J,Gaming Keyboard,8,134.38,20863,Spain
+100022,5432J,Portable Charger,20,100.46,20211,Germany
+100077,5432J,Noise Cancelling Headphones,12,220.74,20025,France
+100285,1234A,USB-C Cable,16,103.13,20766,United Kingdom
+100317,9123C,USB-C Cable,16,83.57,20209,France
+100235,9999I,Smartphone Case,4,114.43,20786,Spain
+100446,9999I,Gaming Keyboard,8,104.13,20722,France
+100227,9123C,Laptop Stand,19,236.74,20172,France
+100122,7890E,Gaming Keyboard,1,231.29,20110,Netherlands
+100054,5678B,Webcam,7,167.56,20967,Italy
+100086,5432J,Noise Cancelling Headphones,20,67.27,20535,Netherlands
+100254,6543F,Wireless Mouse,9,270.94,20168,Spain
+100422,6543F,HD Monitor,8,64.24,20756,France
+100076,9123C,Webcam,8,178.18,20024,France
+100498,9999I,External SSD,20,171.34,20890,France
+100186,9123C,Smartphone Case,18,34.86,20773,Netherlands
+100016,8765G,Portable Charger,13,33.22,20511,Netherlands
+100130,8765G,Noise Cancelling Headphones,5,216.18,20237,Italy
+100335,5678B,Webcam,9,241.4,20989,Spain
+100394,1234A,Gaming Keyboard,20,177.29,20336,Netherlands
+100390,5432J,Noise Cancelling Headphones,19,97.97,20229,France
+100254,5678B,External SSD,10,149.82,20212,United Kingdom
+100115,3456D,Wireless Mouse,8,55.05,20312,France
+100260,5432J,HD Monitor,17,281.11,20514,France
+100003,5432J,Portable Charger,3,179.61,20702,Netherlands
+100279,8765G,Smartphone Case,18,6.34,20448,Spain
+100169,5432J,Portable Charger,8,37.22,20874,Italy
+100074,1234A,Wireless Mouse,6,272.03,20955,Netherlands
+100462,8765G,Noise Cancelling Headphones,18,95.25,20659,Spain
+100027,7890E,Laptop Stand,18,204.97,20055,Italy
+100102,8765G,HD Monitor,4,176.3,20174,France
+100166,8765G,USB-C Cable,7,281.06,20166,United Kingdom
+100365,9999I,USB-C Cable,12,118.94,20376,France
+100055,9999I,Smartphone Case,19,220.08,20959,France
+100135,9123C,Noise Cancelling Headphones,7,195.78,20148,France
+100070,6543F,Noise Cancelling Headphones,19,38.12,20407,Italy
+100239,5432J,Portable Charger,6,146.9,20769,Germany
+100029,3456D,USB-C Cable,1,249.05,20691,France
+100469,8765G,Gaming Keyboard,9,51.13,20245,United Kingdom
+100243,1234A,USB-C Cable,4,263.41,20075,Germany
+100163,8765G,Noise Cancelling Headphones,12,222.67,20451,Spain
+100257,3456D,Laptop Stand,14,52.26,20876,Spain
+100045,8765G,Portable Charger,11,256.63,20454,Italy
+100378,5432J,Laptop Stand,7,85.52,20916,Italy
+100328,9999I,HD Monitor,16,79.93,20922,Italy
+100267,8765G,External SSD,13,61.85,20955,Netherlands
+100224,1234A,Portable Charger,2,177.93,20903,France
+100077,9123C,Wireless Mouse,15,25.22,20384,France
+100043,5432J,External SSD,19,96.27,20953,Netherlands
+100180,7890E,Portable Charger,20,55.48,20709,Germany
+100468,8765G,External SSD,10,246.1,20690,United Kingdom
+100460,1234A,Wireless Mouse,8,289.93,20060,Germany
+100144,8765G,HD Monitor,9,137.27,20184,France
+100347,8765G,Smartphone Case,14,214.2,20714,Germany
+100082,3456D,Laptop Stand,4,74.23,20409,Germany
+100422,6543F,HD Monitor,17,241.41,20991,Germany
+100486,9123C,Gaming Keyboard,3,214.53,20136,Germany
+100326,3456D,Laptop Stand,19,192.29,20369,United Kingdom
+100043,3456D,External SSD,19,135.45,20137,Italy
+100121,5678B,Wireless Mouse,8,184.23,20423,Italy
+100098,1234A,Wireless Mouse,11,163.86,20994,Germany
+100407,3456D,Smartphone Case,20,42.86,20458,Germany
+100302,9123C,Portable Charger,17,251.95,20276,Germany
+100200,1112H,HD Monitor,6,121.21,20997,United Kingdom
+100123,3456D,USB-C Cable,4,201.34,20742,Netherlands
+100267,9123C,Noise Cancelling Headphones,16,235.55,20542,United Kingdom
+100170,5432J,Gaming Keyboard,13,29.34,20367,United Kingdom
+100107,9999I,Noise Cancelling Headphones,18,122.12,20488,United Kingdom
+100414,3456D,HD Monitor,9,250.0,20860,France
+100086,3456D,Laptop Stand,15,277.99,20792,United Kingdom
+100096,6543F,Wireless Mouse,15,224.69,20640,Germany
+100034,1234A,Wireless Mouse,10,205.3,20580,Spain
+100300,5678B,USB-C Cable,8,212.1,20504,United Kingdom
+100497,9999I,Noise Cancelling Headphones,1,285.25,20499,Germany

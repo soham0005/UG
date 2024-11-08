@@ -1,0 +1,7 @@
+column1,column2,column3,column4
+data_mining,oss,OS,DBMS
+DBMS,data_mining,CN,oss
+data_mining,,OS,DBMS
+,CN,oss,OS
+data_mining,oss,OS,
+DBMS,data_mining,CN,oss
