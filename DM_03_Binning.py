@@ -112,16 +112,16 @@ def equal_width_binning(data, num_bins):
     return bins
 
 # Using Equal Width
-if __name__ == "__main__":
-    # Sample data
-    data = [1, 5, 7, 10, 14, 18, 20, 24, 30, 35, 40, 45, 50]
-    num_bins = 5  # Specify the number of bins
+# if __name__ == "__main__":
+#     # Sample data
+#     data = [1, 5, 7, 10, 14, 18, 20, 24, 30, 35, 40, 45, 50]
+#     num_bins = 5  # Specify the number of bins
 
-    binned_data = equal_width_binning(data, num_bins)
+#     binned_data = equal_width_binning(data, num_bins)
 
-    # Print binning results
-    for i, bin_data in enumerate(binned_data):
-        print(f"Bin {i + 1}: {bin_data}")
+#     # Print binning results
+#     for i, bin_data in enumerate(binned_data):
+#         print(f"Bin {i + 1}: {bin_data}")
 
 
 # Main code
@@ -152,6 +152,8 @@ if __name__ == "__main__":
             boundaries_binned = binning_by_boundaries(data, bin_size)
             print_binning_info(data, boundaries_binned, "Boundaries Binning", num_bins)
 
+
+            
             flat_median_binned = [item for sublist in median_binned for item in sublist]
             flat_mean_binned = [item for sublist in mean_binned for item in sublist]
             flat_boundaries_binned = [item for sublist in boundaries_binned for item in sublist]

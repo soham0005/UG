@@ -3,44 +3,53 @@ import csv
 data = []
 with open('Naive_bayes_data.csv', 'r') as file:
     reader = csv.reader(file)
-    next(reader)
+    headers = next(reader)
     for row in reader:
         data.append(row)
 
 total_count = len(data)
-count_M = sum(1 for row in data if row[-1] == "M")
-count_H = total_count - count_M
-P_M = f"{count_M}/{total_count} = {count_M / total_count:.3f}"
-P_H = f"{count_H}/{total_count} = {count_H / total_count:.3f}"
+count_yes = sum(1 for row in data if row[-1] == "Yes")
+count_no = total_count - count_yes
 
-print(f"Total count of M: {count_M}, Probability of M: {P_M}")
-print(f"Total count of H: {count_H}, Probability of H: {P_H}\n")
+output = []
+output.append(f"Total count of Yes: {count_yes}, Probability of Yes (M): {count_yes}/{total_count} = {count_yes / total_count:.3f}")
+output.append(f"Total count of No: {count_no}, Probability of No (H): {count_no}/{total_count} = {count_no / total_count:.3f}\n")
 
-def calculate_prob(attribute_index, value, species):
-    count_species = count_M if species == "M" else count_H
-    count = sum(1 for row in data if row[attribute_index] == value and row[-1] == species)
-    fraction = f"{count}/{count_species}"
-    decimal = count / count_species if count_species else 0
-    print(f"Probability of attribute[{attribute_index}]={value} | Species={species}: {fraction} = {decimal:.3f}")
-    return decimal
+def display_conditional_probs():
+    for i, attribute in enumerate(headers[:-1]):
+        output.append(f"Attribute: {attribute}")
+        values = set(row[i] for row in data)
+        for value in values:
+            count_yes_given_value = sum(1 for row in data if row[i] == value and row[-1] == "Yes")
+            count_no_given_value = sum(1 for row in data if row[i] == value and row[-1] == "No")
+            prob_yes = f"{count_yes_given_value}/{count_yes} = {count_yes_given_value / count_yes:.3f}" if count_yes > 0 else "0/0 = 0.000"
+            prob_no = f"{count_no_given_value}/{count_no} = {count_no_given_value / count_no:.3f}" if count_no > 0 else "0/0 = 0.000"
+            output.append(f"    P({attribute}={value} | Yes): {prob_yes}")
+            output.append(f"    P({attribute}={value} | No): {prob_no}")
+        output.append("")
 
-test_instance = ["Green", "2", "Tall", "No"]
+display_conditional_probs()
 
-print(f"\nTest instance to be classified: {test_instance}\n")
+test_instance = ["Sunny", "Cool", "High", "false"]
+output.append(f"Test instance to be classified: {test_instance}\n")
 
 def calculate_posterior(species):
-    posterior = count_M / total_count if species == "M" else count_H / total_count
+    posterior = count_yes / total_count if species == "Yes" else count_no / total_count
     for i, value in enumerate(test_instance):
-        posterior *= calculate_prob(i, value, species)
+        count_species = count_yes if species == "Yes" else count_no
+        count = sum(1 for row in data if row[i] == value and row[-1] == species)
+        conditional_prob = count / count_species if count_species else 0
+        posterior *= conditional_prob
     return posterior
 
-posterior_M = calculate_posterior("M")
-posterior_H = calculate_posterior("H")
+posterior_yes = calculate_posterior("Yes")
+posterior_no = calculate_posterior("No")
 
-print(f"\nProbability of instance for M: {posterior_M:.6f}")
-print(f"Probability of instance for H: {posterior_H:.6f}\n")
+output.append(f"\nProbability of instance for Yes: {posterior_yes:.6f}")
+output.append(f"Probability of instance for No: {posterior_no:.6f}\n")
 
-print(f"Comparing posterior probabilities:\nP(M | X) = {posterior_M:.6f} vs P(H | X) = {posterior_H:.6f}")
-classification = "M" if posterior_M > posterior_H else "H"
+classification = "Yes" if posterior_yes > posterior_no else "No"
+output.append(f"Predicted Species: {classification}")
 
-print(f"\nPredicted Species: {classification}")
+with open("naive_bayes_output.txt", "w") as file:
+    file.write("\n".join(output))

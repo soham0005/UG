@@ -49,7 +49,8 @@ if __name__ == "__main__":
 # 1,3.5
 # 2,7
 # 3,14
-# 4,50,5,87
+# 4,50,
+# 5,87
 
 # m = (summation(1,n) (Xi - meanx) * (Yi - meanY) ) / summation(1,n)(Xi - meanX)^2
 # c (intercept) = meanY - m * meanX

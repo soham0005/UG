@@ -1,8 +1,7 @@
 import csv
 
 data_file = 'Dry_Bean_Dataset_CSV.csv'
-attributes = ['Perimeter', 'MajorAxisLength', 'MinorAxisLength', 
-              'AspectRation', 'Eccentricity', 'EquivDiameter']
+attributes = ["Area","Perimeter","Circle"]
 
 data = {attribute: [] for attribute in attributes}
 
@@ -16,7 +15,10 @@ with open(data_file, 'r') as file:
 def calculate_statistics(attribute_data):
     sorted_data = sorted(attribute_data)
     n = len(sorted_data)
-
+    
+    minData = min(sorted_data)
+    maxData = max(sorted_data)
+    
     # Calculate Q1, Median, Q3, IQR
     q1 = sorted_data[(n + 1) // 4 - 1]
     median = (sorted_data[n // 2 - 1] + sorted_data[n // 2]) / 2 if n % 2 == 0 else sorted_data[n // 2]
@@ -38,13 +40,15 @@ def calculate_statistics(attribute_data):
     # Capture first 5 outliers
     first_five_outliers = outliers[:5] if count_outliers > 5 else outliers
 
-    return q1, median, q3, iqr, lower_bound, upper_bound, mean, std_dev, count_outliers, first_five_outliers
+    return q1, median, q3, iqr, lower_bound, upper_bound, mean, std_dev, count_outliers, first_five_outliers,minData,maxData
 
 for attribute in attributes:
-    q1, median, q3, iqr, lower_bound, upper_bound, mean, std_dev, count_outliers, first_five_outliers = calculate_statistics(data[attribute])
+    q1, median, q3, iqr, lower_bound, upper_bound, mean, std_dev, count_outliers, first_five_outliers,minData,maxData = calculate_statistics(data[attribute])
 
     print(f"\n{attribute}:")
     print(f"Q1: {q1:.2f}")
+    print(f"Min:{minData}")
+    print(f"Max:{maxData}") 
     print(f"Median: {median:.2f}")
     print(f"Q3: {q3:.2f}")
     print(f"IQR: {iqr:.2f}")

@@ -1,0 +1,38 @@
+Total count of Yes: 9, Probability of Yes (M): 9/14 = 0.643
+Total count of No: 5, Probability of No (H): 5/14 = 0.357
+
+Attribute: outlook
+    P(outlook=Sunny | Yes): 2/9 = 0.222
+    P(outlook=Sunny | No): 3/5 = 0.600
+    P(outlook=Overcast | Yes): 4/9 = 0.444
+    P(outlook=Overcast | No): 0/5 = 0.000
+    P(outlook=Rain | Yes): 3/9 = 0.333
+    P(outlook=Rain | No): 2/5 = 0.400
+
+Attribute: temp
+    P(temp=Hot | Yes): 2/9 = 0.222
+    P(temp=Hot | No): 2/5 = 0.400
+    P(temp=Cool | Yes): 3/9 = 0.333
+    P(temp=Cool | No): 1/5 = 0.200
+    P(temp=Mild | Yes): 4/9 = 0.444
+    P(temp=Mild | No): 2/5 = 0.400
+
+Attribute: humidity
+    P(humidity=Normal | Yes): 6/9 = 0.667
+    P(humidity=Normal | No): 1/5 = 0.200
+    P(humidity=High | Yes): 3/9 = 0.333
+    P(humidity=High | No): 4/5 = 0.800
+
+Attribute: wind
+    P(wind=false | Yes): 6/9 = 0.667
+    P(wind=false | No): 2/5 = 0.400
+    P(wind=true | Yes): 3/9 = 0.333
+    P(wind=true | No): 3/5 = 0.600
+
+Test instance to be classified: ['Sunny', 'Cool', 'High', 'false']
+
+
+Probability of instance for Yes: 0.010582
+Probability of instance for No: 0.013714
+
+Predicted Species: No

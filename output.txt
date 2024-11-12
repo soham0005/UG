@@ -1,35 +1,15 @@
-Frequent Item Sets:
-----------------------------------------
-{ OS }
-{ data_mining }
-{ oss }
-{ DBMS }
-{ CN }
-{ OS data_mining }
-{ DBMS oss }
-{ oss CN }
-{ DBMS data_mining }
-{ oss data_mining }
-{ OS oss }
-{ DBMS oss data_mining }
+Region: A1
+  A Count: 80.0, t-weight: 25.00%, d-weight: 26.67%
+  B Count: 240.0, t-weight: 75.00%, d-weight: 26.67%
+  Total Count: 320
 
-Association Rules:
-----------------------------------------
-{ OS } => { data_mining } (Confidence: 75.00%)
-{ data_mining } => { OS } (Confidence: 60.00%)
-{ DBMS } => { oss } (Confidence: 75.00%)
-{ oss } => { DBMS } (Confidence: 60.00%)
-{ oss } => { CN } (Confidence: 60.00%)
-{ CN } => { oss } (Confidence: 100.00%)
-{ DBMS } => { data_mining } (Confidence: 100.00%)
-{ data_mining } => { DBMS } (Confidence: 80.00%)
-{ oss } => { data_mining } (Confidence: 80.00%)
-{ data_mining } => { oss } (Confidence: 80.00%)
-{ OS } => { oss } (Confidence: 75.00%)
-{ oss } => { OS } (Confidence: 60.00%)
-{ DBMS } => { oss data_mining } (Confidence: 75.00%)
-{ oss } => { DBMS data_mining } (Confidence: 60.00%)
-{ data_mining } => { DBMS oss } (Confidence: 60.00%)
-{ DBMS oss } => { data_mining } (Confidence: 100.00%)
-{ DBMS data_mining } => { oss } (Confidence: 75.00%)
-{ oss data_mining } => { DBMS } (Confidence: 75.00%)
+Region: A2
+  A Count: 120.0, t-weight: 17.65%, d-weight: 40.00%
+  B Count: 560.0, t-weight: 82.35%, d-weight: 62.22%
+  Total Count: 680
+
+Region: A3
+  A Count: 100.0, t-weight: 50.00%, d-weight: 33.33%
+  B Count: 100.0, t-weight: 50.00%, d-weight: 11.11%
+  Total Count: 200
+

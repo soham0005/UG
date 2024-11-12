@@ -18,7 +18,7 @@ def entropy(data, target):
 def info_gain(data, attr, target):
     target_entropy = entropy(data, target)
     print(f"\nCalculating Information Gain for '{attr}':")
-    print(f"Target Entropy (Entropy of '{target}'): {target_entropy}")
+    print(f"Target Class Entropy (Entropy of '{target}'): {target_entropy}")
 
     freq = defaultdict(int)
     for row in data:

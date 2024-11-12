@@ -1,0 +1,14 @@
+Mean of X: 23.666666666666668
+Mean of Y: 45.5
+Covariance: 66.5
+Standard Deviation of X: 4.633213427705081
+Standard Deviation of Y: 17.76231966833161
+Pearson Correlation Coefficient (r): 0.8080526468832656
+Pearson Correlation Coefficient (r): 0.8081
+Interpretation: Positive correlation
+Mean of X: 23.666666666666668
+Mean of Y: 45.5
+m (slope): 3.717391304347826
+c (intercept): -42.47826086956522
+Linear Regression Equation: Y = 3.72 * X + -42.48
+Predicted Y for X = 32.0: 76.48
