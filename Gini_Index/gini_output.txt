@@ -1,0 +1,12 @@
+Target Gini: 0.48
+
+Calculating Gini Index for colour:
+Counts for colour: {'red': 5, 'blue': 5}
+Gini(red) = 0.48, Weighted Gini = 0.24
+Gini(blue) = 0.48, Weighted Gini = 0.24
+Gini Index(S, colour) = 0.48
+
+Final Gini Indices:
+colour: 0.48
+
+The best attribute for splitting is: colour

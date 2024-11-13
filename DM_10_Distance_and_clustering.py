@@ -67,10 +67,10 @@ def main():
     file_name = 'DM_10_Distance_clustering_data.csv' 
     data = read_data(file_name)  
     # Using Mean-based Centroid
-    centroid = calculate_mean_centroid(data)
+    # centroid = calculate_mean_centroid(data)
 
     # Using Medoid-based Centroid
-    # centroid = calculate_medoid_centroid(data)
+    centroid = calculate_medoid_centroid(data)
 
     # print(f"\nUsing Nearest Point (Medoid) as New Centroid: (Unit Cost: {centroid[0]:.2f}, Discount Rate: {centroid[1]:.2f})\n")
     print(f"Centroid: (Unit Cost: {centroid[0]:.2f}, Discount Rate: {centroid[1]:.2f})\n")

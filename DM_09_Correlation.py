@@ -1,4 +1,3 @@
-# Numerical Data
 import csv
 import math
 
@@ -38,7 +37,7 @@ def read_csv(filename):
     x_data, y_data = [], []
     with open(filename, 'r') as file:
         reader = csv.reader(file)
-        next(reader)  # Skip header
+        next(reader)
         for row in reader:
             x_data.append(float(row[0]))
             y_data.append(float(row[1]))
@@ -56,15 +55,6 @@ if correlation is not None:
         print("Interpretation: Negative correlation")
     else:
         print("Interpretation: No correlation")
-
-
-# X,Y
-# 10,20
-# 20,25
-# 30,30
-# 40,35
-# 50,45
-# 60,50
 
 # covariance formula
 '''
