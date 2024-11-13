@@ -1,0 +1,9 @@
+
+Calculating Information Gain for 'wind':
+Target Class Entropy (Entropy of 'play'): 0.9403
+Subset for wind = 'false': Entropy = 0.8113, Weight = 0.5714
+Subset for wind = 'true': Entropy = 1.0, Weight = 0.4286
+Attribute Entropy of 'wind': 0.8922
+Information Gain (Gain(S, wind)) = 0.0481
+
+Final Information Gain for 'wind' with respect to target 'play': 0.0481

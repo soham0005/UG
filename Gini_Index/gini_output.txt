@@ -6,7 +6,15 @@ Gini(red) = 0.48, Weighted Gini = 0.24
 Gini(blue) = 0.48, Weighted Gini = 0.24
 Gini Index(S, colour) = 0.48
 
+Calculating Gini Index for humidity:
+Counts for humidity: {'sunny': 4, 'windy': 2, 'rainy': 4}
+Gini(sunny) = 0.5, Weighted Gini = 0.2
+Gini(windy) = 0.5, Weighted Gini = 0.1
+Gini(rainy) = 0.375, Weighted Gini = 0.15
+Gini Index(S, humidity) = 0.45
+
 Final Gini Indices:
 colour: 0.48
+humidity: 0.45
 
-The best attribute for splitting is: colour
+The best attribute for splitting is: humidity

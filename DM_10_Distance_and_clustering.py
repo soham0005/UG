@@ -71,8 +71,6 @@ def main():
 
     # Using Medoid-based Centroid
     centroid = calculate_medoid_centroid(data)
-
-    # print(f"\nUsing Nearest Point (Medoid) as New Centroid: (Unit Cost: {centroid[0]:.2f}, Discount Rate: {centroid[1]:.2f})\n")
     print(f"Centroid: (Unit Cost: {centroid[0]:.2f}, Discount Rate: {centroid[1]:.2f})\n")
 
     print("Distances from Centroid:")
