@@ -1,15 +1,28 @@
-Region: A1
-  A Count: 80.0, t-weight: 25.00%, d-weight: 26.67%
-  B Count: 240.0, t-weight: 75.00%, d-weight: 26.67%
-  Total Count: 320
+Frequent Item Sets:
+----------------------------------------
+{ L4 }
+{ L1 }
+{ L2 }
+{ L3 }
+{ L5 }
+{ L5 L1 }
+{ L4 L2 }
+{ L2 L3 }
+{ L2 L5 }
+{ L2 L1 }
+{ L3 L1 }
+{ L5 L2 L1 }
+{ L2 L3 L1 }
 
-Region: A2
-  A Count: 120.0, t-weight: 17.65%, d-weight: 40.00%
-  B Count: 560.0, t-weight: 82.35%, d-weight: 62.22%
-  Total Count: 680
+Rule: { L3 L1 } => { L5 }
+Step 1: Identify transactions containing antecedent frozenset({'L3', 'L1'})
+Count of transactions with antecedent frozenset({'L3', 'L1'}): 4
+Total transactions: 9
+Support of antecedent frozenset({'L3', 'L1'}) = (Count of transactions with antecedent / Total transactions) * 100 = 44.44%
 
-Region: A3
-  A Count: 100.0, t-weight: 50.00%, d-weight: 33.33%
-  B Count: 100.0, t-weight: 50.00%, d-weight: 11.11%
-  Total Count: 200
+Step 2: Identify transactions containing rule frozenset({'L5', 'L3', 'L1'})
+Count of transactions with rule frozenset({'L5', 'L3', 'L1'}): 1
+Support of rule frozenset({'L5', 'L3', 'L1'}) = (Count of transactions with rule / Total transactions) * 100 = 11.11%
 
+Step 3: Confidence = Support(Rule) / Support(Antecedent)
+Confidence: 25.00%

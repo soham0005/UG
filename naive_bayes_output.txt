@@ -10,12 +10,12 @@ Attribute: outlook
     P(outlook=Rain | No): 2/5 = 0.400
 
 Attribute: temp
-    P(temp=Cool | Yes): 3/9 = 0.333
-    P(temp=Cool | No): 1/5 = 0.200
-    P(temp=Mild | Yes): 4/9 = 0.444
-    P(temp=Mild | No): 2/5 = 0.400
     P(temp=Hot | Yes): 2/9 = 0.222
     P(temp=Hot | No): 2/5 = 0.400
+    P(temp=Mild | Yes): 4/9 = 0.444
+    P(temp=Mild | No): 2/5 = 0.400
+    P(temp=Cool | Yes): 3/9 = 0.333
+    P(temp=Cool | No): 1/5 = 0.200
 
 Attribute: humidity
     P(humidity=High | Yes): 3/9 = 0.333
